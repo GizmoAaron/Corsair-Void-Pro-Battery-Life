@@ -7,7 +7,7 @@ product_id = 0x0a14
 devices = hid.HidDeviceFilter(vendor_id=vendor_id, product_id=product_id).get_devices()
 
 def sample_handler(data):
-    print("Raw data: {0}".format(data))
+    print("Battery Life: {0}".format(data[2]))
 
 if devices:
     device = devices[0]
