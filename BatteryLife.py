@@ -19,7 +19,7 @@ if devices:
         # just keep the device opened to receive events
         buffer = [0xC9, 0x64]
         device.send_output_report(buffer)
-        sleep(1)    
+        sleep(10)    
 
 else:
     print("no devices")
