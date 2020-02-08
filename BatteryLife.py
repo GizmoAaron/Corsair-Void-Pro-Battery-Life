@@ -7,7 +7,11 @@ product_id = 0x0a14
 devices = hid.HidDeviceFilter(vendor_id=vendor_id, product_id=product_id).get_devices()
 
 def sample_handler(data):
-    print("Battery Life: {0}".format(data[2]))
+    life = data[2];
+    if(life>127):
+        print("Battery Life: {0}".format(life-127))
+    else:
+        print("Battery Life: {0}".format(life))
 
 if devices:
     device = devices[0]
