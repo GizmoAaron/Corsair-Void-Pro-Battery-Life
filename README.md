@@ -1,7 +1,7 @@
 # Corsair-Battery-Life
 Simple python script to get the battery life from Corsair Void Pro.
 
-## If the value is 0 initially, your device is probably off. If it is between 0 and 100, that is your battery life currently. If it is above 100, say 170-220, you have your headset muted, and it changes the value, so unmute to check the value of the battery.  
+## There is a chance that you might be on the wrong device, as there are 3 that represent the Headset. So just change the device from 2 to 0 or 1 and it should work on one of those channels.
 ![](images/ReadmeImage.png)
 
 ### Special Thanks to Reddit user Sariel_D for his post on reading data from a usb stream.
