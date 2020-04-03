@@ -13,9 +13,9 @@ def signal_handler(signal, frame):
 def sample_handler(data):
     life = data[2];
     if(life>127):
-        print("Battery Life: {0}".format(life-127), end = "\r")
+        print("Battery Life: {0} ".format(life-127), end = "\r")
     else:
-        print("Battery Life: {0}".format(life), end = "\r")
+        print("Battery Life: {0} ".format(life), end = "\r")
 
 if devices:
     device = devices[2]
